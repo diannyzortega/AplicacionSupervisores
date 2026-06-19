@@ -16,12 +16,21 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_backend.settings")
 if not apps.ready:
     django.setup()
 
-from django.core.management import call_command
-try:
-    call_command('makemigrations', 'comercial')
-    call_command('migrate')
-except Exception as e:
-    st.error(f"Error al aplicar migraciones de base de datos: {e}")
+# Cachar las migraciones para que se ejecuten EXACTAMENTE UNA VEZ al arrancar el servidor
+# y no en cada interacción/clic del usuario (lo cual ralentizaba todas las páginas)
+@st.cache_resource
+def ejecutar_migraciones_iniciales():
+    from django.core.management import call_command
+    try:
+        call_command('makemigrations', 'comercial')
+        call_command('migrate')
+        return True
+    except Exception as e:
+        return f"Error al aplicar migraciones de base de datos: {e}"
+
+migration_status = ejecutar_migraciones_iniciales()
+if migration_status is not True:
+    st.error(migration_status)
 
 # =================================================================
 # 🛡️ BLOQUE DE INICIALIZACIÓN ESTRICTO (Garantía Anti-Fugas de Datos)
