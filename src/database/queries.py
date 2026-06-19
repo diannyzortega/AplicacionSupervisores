@@ -46,7 +46,7 @@ COLUMN_MAPPING = {
     "T_Sucursales": {'id_sucursal': 'ID_Sucursal', 'nombre_sucursal': 'Nombre_Sucursal', 'id_region': 'ID_Region'},
     "T_Usuarios": {'id_usuario': 'ID_Usuario', 'nombre': 'Nombre', 'id_rol': 'ID_Rol', 'id_region': 'ID_Region', 'id_sucursal': 'ID_Sucursal'},
     "T_Asesores": {'id_asesor': 'ID_Asesor', 'nombre_asesor': 'Nombre_Asesor', 'id_usuario': 'ID_Usuario', 'maestra': 'Maestra', 'maestra_rebanadoras': 'Maestra_Rebanadoras'},
-    "T_Categorias": {'id_categoria': 'ID_Categoria', 'nombre_categoria': 'Nombre_Categoria', 'id_region': 'ID_Region', 'obj_activacion': 'Obj_Activacion', 'tipo_obj_activacion': 'Tipo_Obj_Activacion', 'obj_volumen': 'Obj_Volumen', 'obj_profundidad': 'Obj_Profundidad', 'mes': 'Mes'},
+    "T_Categorias": {'id_categoria': 'ID_Categoria', 'nombre_categoria': 'Nombre_Categoria', 'id_region': 'ID_Region', 'obj_activacion': 'Obj_Activacion', 'tipo_obj_activacion': 'Tipo_Obj_Activacion', 'obj_volumen': 'Obj_Volumen', 'obj_profundidad': 'Obj_Profundidad', 'mes': 'Mes', 'tipo_medida': 'Tipo Medida'},
     "T_Asesor_Categorias": {'id_asesor': 'ID_Asesor', 'id_categoria': 'ID_Categoria', 'obj_volumen': 'Obj_Volumen'},
     "T_Registro_Diario": {'fecha': 'Fecha', 'id_asesor': 'ID_Asesor', 'id_categoria': 'ID_Categoria', 'act_dia': 'Act_Dia', 'vol_dia': 'Vol_Dia', 'prof_dia': 'Prof_Dia'}
 }

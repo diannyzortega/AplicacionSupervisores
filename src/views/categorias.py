@@ -92,7 +92,7 @@ def show_categorias():
                 df_visual["Nombre_Region"] = "Todas"
                 
             # Seleccionar y ordenar columnas para el visor
-            columnas_orden = ["ID_Categoria", "Nombre_Categoria", "Nombre_Region", "Mes", "Obj_Activacion", "Tipo_Obj_Activacion", "Obj_Volumen", "Obj_Profundidad"]
+            columnas_orden = ["ID_Categoria", "Nombre_Categoria", "Nombre_Region", "Mes", "Tipo Medida", "Obj_Activacion", "Tipo_Obj_Activacion", "Obj_Volumen", "Obj_Profundidad"]
             df_visual = df_visual[[col for col in columnas_orden if col in df_visual.columns]]
             
             # Configurar las columnas del editor de datos
@@ -103,6 +103,7 @@ def show_categorias():
                 "Nombre_Categoria": st.column_config.TextColumn("Nombre Categoría", required=True),
                 "Nombre_Region": st.column_config.SelectboxColumn("Región Asignada", options=opciones_reg_select, required=True, disabled=(rol == "coordinador")),
                 "Mes": st.column_config.SelectboxColumn("Mes", options=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"], required=True),
+                "Tipo Medida": st.column_config.SelectboxColumn("Tipo Medida", options=["caja", "kilo", "unidad"], required=True),
                 "Obj_Activacion": st.column_config.NumberColumn("Meta Activación", required=True),
                 "Tipo_Obj_Activacion": st.column_config.SelectboxColumn("Unidad Activación", options=["Porcentaje", "Cantidad"], required=True),
                 "Obj_Volumen": st.column_config.NumberColumn("Meta Volumen (%)"),
@@ -130,6 +131,7 @@ def show_categorias():
                     vol = float(fila["Obj_Volumen"])
                     prof = int(fila["Obj_Profundidad"])
                     mes_val = str(fila.get("Mes", "")).strip()
+                    tipo_medida_val = str(fila.get("Tipo Medida", "unidad")).lower().strip()
                     
                     # Buscar el ID de la Región
                     reg_nombre = str(fila.get("Nombre_Region", "Todas"))
@@ -156,6 +158,7 @@ def show_categorias():
                         df_maestro_actualizado.at[idx_maestro, "Obj_Volumen"] = vol
                         df_maestro_actualizado.at[idx_maestro, "Obj_Profundidad"] = prof
                         df_maestro_actualizado.at[idx_maestro, "Mes"] = mes_val
+                        df_maestro_actualizado.at[idx_maestro, "Tipo Medida"] = tipo_medida_val
                 
                 # Guardar en base de datos
                 df_maestro_actualizado["ID_Region"] = df_maestro_actualizado["ID_Region"].fillna(0).astype(int)
@@ -184,7 +187,11 @@ def show_categorias():
             
             with st.form("Form_Crear_Cat", clear_on_submit=True):
                 nom_categoria = st.text_input("Nombre de la Categoría:", placeholder="Ej. Cocidos Rebanables, Salsas, etc.").strip()
-                mes_categoria = st.selectbox("Mes de la Categoría Foco:", ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"])
+                col_f_mes, col_f_medida = st.columns(2)
+                with col_f_mes:
+                    mes_categoria = st.selectbox("Mes de la Categoría Foco:", ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"])
+                with col_f_medida:
+                    tipo_medida = st.selectbox("Tipo de Medida:", ["caja", "kilo", "unidad"], index=2)
                 st.text_input("Región Asignada (Automática):", value=region_usuario if region_usuario else "Sin Región", disabled=True)
                 id_region_sel = id_region_usuario
                 
@@ -242,7 +249,8 @@ def show_categorias():
                                 "Tipo_Obj_Activacion": tipo_obj_act,
                                 "Obj_Volumen": float(obj_vol),
                                 "Obj_Profundidad": int(obj_prof),
-                                "Mes": mes_categoria
+                                "Mes": mes_categoria,
+                                "Tipo Medida": tipo_medida
                             }])
                             
                             df_actualizado_cat = pd.concat([tb_categorias, nueva_cat], ignore_index=True)
