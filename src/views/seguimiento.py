@@ -143,6 +143,8 @@ def show_seguimiento():
             df_act = pd.DataFrame(columns=["Categoria", "Maestra", "Meta Categoria", "Meta Asesor", "Avance", "Activación del Día", "% Cumplimiento"] + ["ID_Categoria"])
         
         cols_act = ["Categoria", "Maestra", "Meta Categoria", "Meta Asesor", "Avance", "Activación del Día", "% Cumplimiento"]
+        if bloquear_edicion:
+            cols_act.remove("Activación del Día")
         
         editor_act = st.data_editor(
             df_act[cols_act + ["ID_Categoria"]],
@@ -194,6 +196,8 @@ def show_seguimiento():
             df_vol = pd.DataFrame(columns=["Categoria", "Tipo Medida", "Obj Volumen", "Meta Categoria", "Meta Asesor", "Avance", "Venta del Día", "% Cumplimiento"] + ["ID_Categoria"])
         
         cols_vol = ["Categoria", "Tipo Medida", "Obj Volumen", "Meta Categoria", "Meta Asesor", "Avance", "Venta del Día", "% Cumplimiento"]
+        if bloquear_edicion:
+            cols_vol.remove("Venta del Día")
         
         editor_vol = st.data_editor(
             df_vol[cols_vol + ["ID_Categoria"]],
@@ -234,6 +238,8 @@ def show_seguimiento():
             })
         df_prof = pd.DataFrame(data_prof)
         cols_prof = ["Categoria", "Maestra", "Total de SKUs activos por cliente", "Avance", "Carga Diaria", "% Cumplimiento"]
+        if bloquear_edicion:
+            cols_prof.remove("Carga Diaria")
         editor_prof = st.data_editor(
             df_prof[cols_prof + ["ID_Categoria"]],
             hide_index=True,

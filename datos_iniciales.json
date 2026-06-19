@@ -1,2 +1,2598 @@
 [
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "2026-06-11 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "2026-06-09 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "2026-06-08 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "2026-06-07 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "2026-06-08 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "2026-06-05 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "2026-06-10 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-06-15T23:54:28.651Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "2026-06-06 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-06-15T23:54:37.432Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Queso",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-06-15T23:54:37.432Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Lucha",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-06-15T23:54:37.432Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Jamon",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-06-15T23:54:37.432Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-06-15T23:55:36.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Asesor 3 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-06-15T23:55:36.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Asesor 3 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-06-15T23:55:36.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Asesor 1 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-06-15T23:55:36.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Asesor 1 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-06-15T23:55:36.143Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Asesor 1 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-06-15T23:55:42.433Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Maria Bustamante",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-06-15T23:55:42.433Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Omar Casique",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-06-15T23:55:42.433Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Libia Sanchez",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-06-15T23:55:42.434Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Lilian Moreno",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "2026-06-11 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "2026-06-09 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "2026-06-08 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "2026-06-06 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "2026-06-10 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "2026-06-08 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-06-15T23:55:55.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "2026-06-05 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-06-16T00:21:29.123Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Mezcla",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-06-16T00:28:10.516Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Jamon",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-06-16T00:48:37.682Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Leche",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-06-16T00:48:37.682Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Jamon",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-06-16T00:48:37.682Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Mezcla",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-06-16T00:48:37.682Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-06-16T01:02:47.971Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-06-16T14:05:38.291Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "La Lucha",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-06-16T14:05:38.291Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Jamon",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-06-16T14:05:38.291Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Mezlca",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-06-16T14:05:38.291Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Asesor A008 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Asesor A008 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Asesor A008 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Asesor A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Asesor A005 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2026-06-16T14:05:46.571Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Asesor A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2026-06-16T14:08:38.155Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2026-06-16T14:09:02.092Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2026-06-16T14:09:34.762Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2026-06-16T14:16:36.201Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Jamon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2026-06-16T15:12:22.040Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "5",
+        "object_repr": "Seguimiento: A005 - Cat 5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2026-06-16T15:12:22.040Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "4",
+        "object_repr": "Seguimiento: A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2026-06-16T15:12:22.040Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "Seguimiento: A005 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2026-06-16T15:12:22.040Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Seguimiento: A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2026-06-16T15:12:22.040Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Seguimiento: A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2026-06-16T15:27:02.345Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "13",
+        "object_repr": "Registro: 2026-06-15 - A005 - Cat 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Fecha\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2026-06-16T18:11:57.534Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "10",
+        "object_repr": "Seguimiento: A005 - Cat 5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2026-06-16T18:11:57.534Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "9",
+        "object_repr": "Seguimiento: A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2026-06-16T18:11:57.534Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "8",
+        "object_repr": "Seguimiento: A005 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2026-06-16T18:11:57.535Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "7",
+        "object_repr": "Seguimiento: A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2026-06-16T18:11:57.535Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "6",
+        "object_repr": "Seguimiento: A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "13",
+        "object_repr": "Registro: 2026-06-15 - A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "12",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "11",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "10",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "9",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "8",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "7",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "6",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 5",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2026-06-16T18:12:07.025Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Registro: 2026-06-16 - A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2026-06-16T18:12:22.367Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "A009",
+        "object_repr": "Gerson Sanchez",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2026-06-16T18:12:22.367Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "A008",
+        "object_repr": "Dimas Alviarez",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2026-06-16T18:12:22.367Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "A006",
+        "object_repr": "Lilian Moreno",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2026-06-16T18:12:22.367Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "A005",
+        "object_repr": "Libia Sanchez",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2026-06-16T18:13:03.662Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "Asesor A005 - Cat 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2026-06-16T18:13:03.662Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Asesor A005 - Cat 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2026-06-16T18:13:03.662Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "Asesor A005 - Cat 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2026-06-16T19:17:18.991Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "Chardeli",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2026-06-16T19:17:25.890Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Purogold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2026-06-16T19:17:33.810Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Queso",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2026-06-16T19:17:41.413Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "La Lucha",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2026-06-16T19:17:45.975Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Jamon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2026-06-16T19:17:49.615Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tipo medida\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2026-06-16T19:31:53.886Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Obj profundidad\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2026-06-16T19:31:59.549Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Jamon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Obj profundidad\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2026-06-16T19:32:05.327Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "La Lucha",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Obj profundidad\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2026-06-16T19:34:56.391Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Mortadela",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Obj profundidad\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "19",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "18",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "17",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "16",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "15",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "14",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "13",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2026-06-16T20:32:23.836Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2026-06-16T20:49:14.515Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Objetivo principal\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2026-06-16T20:49:24.248Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "13",
+        "object_repr": "2026-06-17 - Gabriel Oviedo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Objetivo principal\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2026-06-16T21:25:43.245Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "15",
+        "object_repr": "2026-06-19 - Jhon Atehortua",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Monto proyectado cobro\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2026-06-16T21:27:16.477Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "24",
+        "object_repr": "2026-06-19 - Jhon Atehortua",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Meta cobranza matutina\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2026-06-17T00:23:40.239Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "24",
+        "object_repr": "2026-06-19 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2026-06-17T00:23:40.240Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "23",
+        "object_repr": "2026-06-18 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2026-06-17T00:23:40.240Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "22",
+        "object_repr": "2026-06-17 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2026-06-17T00:23:40.240Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "21",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2026-06-17T00:23:40.240Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "20",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.431Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "16",
+        "object_repr": "2026-06-20 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.432Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "15",
+        "object_repr": "2026-06-19 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.432Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "14",
+        "object_repr": "2026-06-18 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.432Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "13",
+        "object_repr": "2026-06-17 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.432Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2026-06-17T00:23:47.432Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2026-06-17T00:25:36.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "29",
+        "object_repr": "2026-06-16 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2026-06-17T00:25:36.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "28",
+        "object_repr": "2026-06-19 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2026-06-17T00:25:36.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "27",
+        "object_repr": "2026-06-18 - Jhon Atehortua",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2026-06-17T00:25:36.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "26",
+        "object_repr": "2026-06-17 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2026-06-17T00:25:36.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "25",
+        "object_repr": "2026-06-16 - Gabriel Oviedo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$NGmoReTm1JaxSrkVwL27iq$7dBb2TWfR6ySLr69kmkPJTTMocgA/VcXPPNGBSPSVFc=",
+        "last_login": "2026-06-16T14:16:02.792Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-15T18:55:28.684Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$An13o0EZk9Vg6G9Hf66BTL$o9U1FDK4A6ZfA3J85W5NRAaZjbKGUvxQEBazHixdvic=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "coord_andes",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-15T18:55:29.929Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$Di1xz1SDhyArNZtEUzwpmx$qxSZ22BBMHIg+69r4AHuOVGOc1XcH3Hm087j8Zduc8s=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sup_tachira_a",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-15T18:55:31.087Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$PtKxo8Tt5IuCevUAI5NSn0$7+nNxWhw+9RWDCLjf4GStGRPw5M1+kqBHM5SxdHAUwA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sup_tachira_b",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-15T18:55:32.299Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$H9faZd5QrvbysjyCfuC1rB$2NOKg1WV/342lZwHNARTlAVPyFjwgKVb7kLgJUE4Ysc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sup_barinas",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-15T18:55:33.454Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$940oMcfrdXKTW3CeU6V3SF$V6DWlgIJvG4dZJMxtpS+6uSAMzoA+A+NUH8WV+E3XDA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sup_caja_seca",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-16T00:15:29.422Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$yLbaTp6sVTU6yE6FK2jVfR$1gxa+wKEJXt036x7DmMrJaCFgvCCIH/gZ5bq/9pkuDE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "coord_occidente",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-16T00:31:42.653Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$3Ddcilw0m9Me5QgJn0qKxT$WizhiLKbki2NGnFx8/m7XdIfaYJDutCDcLoh54ZWfak=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sup_merida",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-16T18:27:54.286Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "40pfdo0i917byzprcrdxecmptf5kx3w9",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQAP-yZ0PYLRTao3ff0LAsSNXQpLQn499Nkx70OjOZN0xh38q0t7ROs8AICJdfxiE-Uz2EPEK9LyoudVtnVkeiTtvUbZH0up7t36CEVmAEY3GIORjPaFiQdO-iG6yTLpLF3pDNiXQQYmNz5wWJUjSok3ei-47h8wXJNDcu:1wZUaA:qs5wJs_4aCh32OnFLAm0Fns2MuJexxud-CxA6Nv_WSg",
+        "expire_date": "2026-06-30T14:16:02.802Z"
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "id_usuario": 1,
+        "nombre": "Diannyz Ortega",
+        "id_rol": 1,
+        "id_region": 0,
+        "id_sucursal": 0
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "id_usuario": 2,
+        "nombre": "Rainer Guerrero",
+        "id_rol": 2,
+        "id_region": 10,
+        "id_sucursal": 0
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "id_usuario": 3,
+        "nombre": "Jhon Atehortua",
+        "id_rol": 3,
+        "id_region": 10,
+        "id_sucursal": 101
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 4,
+    "fields": {
+        "user": 4,
+        "id_usuario": 4,
+        "nombre": "Karla Guerrero",
+        "id_rol": 3,
+        "id_region": 10,
+        "id_sucursal": 101
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 5,
+    "fields": {
+        "user": 5,
+        "id_usuario": 5,
+        "nombre": "Gabriel Oviedo",
+        "id_rol": 3,
+        "id_region": 10,
+        "id_sucursal": 103
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 6,
+    "fields": {
+        "user": 6,
+        "id_usuario": 6,
+        "nombre": "David Sanchez",
+        "id_rol": 3,
+        "id_region": 10,
+        "id_sucursal": 105
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 7,
+    "fields": {
+        "user": 7,
+        "id_usuario": 7,
+        "nombre": "Cesar Garcia",
+        "id_rol": 2,
+        "id_region": 20,
+        "id_sucursal": 0
+    }
+},
+{
+    "model": "comercial.userprofile",
+    "pk": 8,
+    "fields": {
+        "user": 8,
+        "id_usuario": 8,
+        "nombre": "Alejandro Ramirez",
+        "id_rol": 3,
+        "id_region": 10,
+        "id_sucursal": 102
+    }
+},
+{
+    "model": "comercial.region",
+    "pk": 1,
+    "fields": {
+        "id_region": 10,
+        "nombre_region": "Andes"
+    }
+},
+{
+    "model": "comercial.region",
+    "pk": 2,
+    "fields": {
+        "id_region": 20,
+        "nombre_region": "Occidente"
+    }
+},
+{
+    "model": "comercial.rol",
+    "pk": 1,
+    "fields": {
+        "id_rol": 1,
+        "nombre_rol": "administrador"
+    }
+},
+{
+    "model": "comercial.rol",
+    "pk": 2,
+    "fields": {
+        "id_rol": 2,
+        "nombre_rol": "coordinador"
+    }
+},
+{
+    "model": "comercial.rol",
+    "pk": 3,
+    "fields": {
+        "id_rol": 3,
+        "nombre_rol": "supervisor"
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 88,
+    "fields": {
+        "id_sucursal": 101,
+        "nombre_sucursal": "Chargon Táchira",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 89,
+    "fields": {
+        "id_sucursal": 102,
+        "nombre_sucursal": "Chargon Mérida",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 90,
+    "fields": {
+        "id_sucursal": 103,
+        "nombre_sucursal": "Chargon Barinas",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 91,
+    "fields": {
+        "id_sucursal": 104,
+        "nombre_sucursal": "Chargon Santa Barbara",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 92,
+    "fields": {
+        "id_sucursal": 105,
+        "nombre_sucursal": "Chargon Caja Seca",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 93,
+    "fields": {
+        "id_sucursal": 106,
+        "nombre_sucursal": "Chargon Portuguesa",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 94,
+    "fields": {
+        "id_sucursal": 107,
+        "nombre_sucursal": "Chargon Lara",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 95,
+    "fields": {
+        "id_sucursal": 108,
+        "nombre_sucursal": "Chargon Guasdualito",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 96,
+    "fields": {
+        "id_sucursal": 109,
+        "nombre_sucursal": "Chargon Trujillo",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 97,
+    "fields": {
+        "id_sucursal": 110,
+        "nombre_sucursal": "Chargon Maracaibo",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 98,
+    "fields": {
+        "id_sucursal": 111,
+        "nombre_sucursal": "Chargon Puerto Cabello",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 99,
+    "fields": {
+        "id_sucursal": 112,
+        "nombre_sucursal": "Chargon Falcon",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 100,
+    "fields": {
+        "id_sucursal": 113,
+        "nombre_sucursal": "DLG San Cristobal",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 101,
+    "fields": {
+        "id_sucursal": 114,
+        "nombre_sucursal": "DLG Rio Chama",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 102,
+    "fields": {
+        "id_sucursal": 115,
+        "nombre_sucursal": "Chargon el Vigia",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 103,
+    "fields": {
+        "id_sucursal": 116,
+        "nombre_sucursal": "DHG La Grita",
+        "id_region": 10
+    }
+},
+{
+    "model": "comercial.sucursal",
+    "pk": 104,
+    "fields": {
+        "id_sucursal": 117,
+        "nombre_sucursal": "Chargon Carora",
+        "id_region": 20
+    }
+},
+{
+    "model": "comercial.asesor",
+    "pk": "A031",
+    "fields": {
+        "nombre_asesor": "Jorge Jerez",
+        "id_usuario": 5,
+        "maestra": "124",
+        "maestra_rebanadoras": "17"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 1,
+    "fields": {
+        "nombre_categoria": "Mortadela",
+        "id_region": 10,
+        "obj_activacion": 80,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 90,
+        "obj_profundidad": 0,
+        "tipo_medida": "caja"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 2,
+    "fields": {
+        "nombre_categoria": "Jamon",
+        "id_region": 10,
+        "obj_activacion": 70,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 90,
+        "obj_profundidad": 0,
+        "tipo_medida": "caja"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 3,
+    "fields": {
+        "nombre_categoria": "Mezcla",
+        "id_region": 10,
+        "obj_activacion": 22,
+        "tipo_obj_activacion": "Cantidad",
+        "obj_volumen": 0,
+        "obj_profundidad": 0,
+        "tipo_medida": "unidad"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 4,
+    "fields": {
+        "nombre_categoria": "La Lucha",
+        "id_region": 10,
+        "obj_activacion": 60,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 60,
+        "obj_profundidad": 0,
+        "tipo_medida": "caja"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 5,
+    "fields": {
+        "nombre_categoria": "Leche",
+        "id_region": 10,
+        "obj_activacion": 44,
+        "tipo_obj_activacion": "Cantidad",
+        "obj_volumen": 0,
+        "obj_profundidad": 0,
+        "tipo_medida": "unidad"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 6,
+    "fields": {
+        "nombre_categoria": "Queso",
+        "id_region": 10,
+        "obj_activacion": 20,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 0,
+        "obj_profundidad": 0,
+        "tipo_medida": "kilo"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 7,
+    "fields": {
+        "nombre_categoria": "Purogold",
+        "id_region": 10,
+        "obj_activacion": 10,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 0,
+        "obj_profundidad": 0,
+        "tipo_medida": "caja"
+    }
+},
+{
+    "model": "comercial.categoria",
+    "pk": 8,
+    "fields": {
+        "nombre_categoria": "Chardeli",
+        "id_region": 10,
+        "obj_activacion": 10,
+        "tipo_obj_activacion": "Porcentaje",
+        "obj_volumen": 0,
+        "obj_profundidad": 0,
+        "tipo_medida": "caja"
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 17,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "obj_volumen": 219.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 18,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 2,
+        "obj_volumen": 44.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 19,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 4,
+        "obj_volumen": 291.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 20,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 6,
+        "obj_volumen": 65.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 21,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 7,
+        "obj_volumen": 22.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 22,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 8,
+        "obj_volumen": 7.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 23,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 3,
+        "obj_volumen": 22.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.asesorcategoria",
+    "pk": 24,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 5,
+        "obj_volumen": 44.0,
+        "obj_profundidad": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 11,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "act_lleva": 8.0,
+        "vol_lleva": 20.0,
+        "prof_lleva": 1.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 12,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 2,
+        "act_lleva": 12.0,
+        "vol_lleva": 5.0,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 13,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 3,
+        "act_lleva": 3.0,
+        "vol_lleva": 2.0,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 14,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 4,
+        "act_lleva": 15.0,
+        "vol_lleva": 3.0,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 15,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 5,
+        "act_lleva": 4.0,
+        "vol_lleva": 2.0,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 16,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 6,
+        "act_lleva": 4.0,
+        "vol_lleva": 6.0,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 17,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 7,
+        "act_lleva": 3.0,
+        "vol_lleva": 0.5,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.seguimientodiario",
+    "pk": 18,
+    "fields": {
+        "id_asesor": "A031",
+        "id_categoria": 8,
+        "act_lleva": 5.0,
+        "vol_lleva": 0.4,
+        "prof_lleva": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 14,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "act_dia": 5.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 15,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 2,
+        "act_dia": 10.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 16,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 3,
+        "act_dia": 2.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 17,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 4,
+        "act_dia": 7.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 18,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 5,
+        "act_dia": 1.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 19,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 6,
+        "act_dia": 3.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 20,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 7,
+        "act_dia": 1.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 21,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 8,
+        "act_dia": 2.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 22,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "act_dia": 0.0,
+        "vol_dia": 20.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 23,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 2,
+        "act_dia": 0.0,
+        "vol_dia": 5.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 24,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 3,
+        "act_dia": 0.0,
+        "vol_dia": 2.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 25,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 4,
+        "act_dia": 0.0,
+        "vol_dia": 3.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 26,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 5,
+        "act_dia": 0.0,
+        "vol_dia": 2.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 27,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 6,
+        "act_dia": 0.0,
+        "vol_dia": 6.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 28,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 7,
+        "act_dia": 0.0,
+        "vol_dia": 0.5,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 29,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 8,
+        "act_dia": 0.0,
+        "vol_dia": 0.4,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 30,
+    "fields": {
+        "fecha": "2026-06-16",
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "act_dia": 0.0,
+        "vol_dia": 0.0,
+        "prof_dia": 1.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 31,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 1,
+        "act_dia": 3.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 32,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 2,
+        "act_dia": 2.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 33,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 3,
+        "act_dia": 1.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 34,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 4,
+        "act_dia": 8.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 35,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 5,
+        "act_dia": 3.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 36,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 6,
+        "act_dia": 1.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 37,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 7,
+        "act_dia": 2.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+},
+{
+    "model": "comercial.registrodiario",
+    "pk": 38,
+    "fields": {
+        "fecha": "2026-06-19",
+        "id_asesor": "A031",
+        "id_categoria": 8,
+        "act_dia": 3.0,
+        "vol_dia": 0.0,
+        "prof_dia": 0.0
+    }
+}
 ]
