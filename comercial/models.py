@@ -54,6 +54,7 @@ class Categoria(models.Model):
     obj_volumen = models.IntegerField(default=0)
     obj_profundidad = models.IntegerField(default=0)
     tipo_medida = models.CharField(max_length=20, choices=[('caja','Caja'),('kilo','Kilo'),('unidad','Unidad')], default='unidad')
+    mes = models.CharField(max_length=50, blank=True, null=True, default='')
 
     def __str__(self):
         return self.nombre_categoria

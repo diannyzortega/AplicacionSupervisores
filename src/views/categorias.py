@@ -52,11 +52,33 @@ def show_categorias():
     def render_visor_edicion(index_pestana_guardar):
         st.subheader("Modificar Categorías")
         
+        # Selector de Mes para filtrar
+        meses_filtro = ["Todos", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+        import datetime
+        hoy = datetime.date.today()
+        meses_es = {
+            1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo", 6: "Junio",
+            7: "Julio", 8: "Agosto", 9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
+        }
+        mes_defecto = meses_es[hoy.month]
+        mes_seleccionado = st.selectbox("Filtrar por Mes:", meses_filtro, index=meses_filtro.index(mes_defecto), key=f"filtro_mes_cats_{index_pestana_guardar}")
+
         # Filtrar categorías visibles según el rol del coordinador
         if rol == "coordinador":
             df_filtrado = tb_categorias[tb_categorias["ID_Region"].isin([id_region_usuario, 0])].copy()
         else:
             df_filtrado = tb_categorias.copy()
+            
+        if mes_seleccionado != "Todos" and "Mes" in df_filtrado.columns:
+            if mes_seleccionado.lower() == mes_defecto.lower():
+                df_filtrado = df_filtrado[
+                    (df_filtrado["Mes"].astype(str).str.lower() == mes_seleccionado.lower()) |
+                    (df_filtrado["Mes"].isna()) |
+                    (df_filtrado["Mes"].astype(str).str.strip() == "") |
+                    (df_filtrado["Mes"].astype(str).str.lower() == "none")
+                ]
+            else:
+                df_filtrado = df_filtrado[df_filtrado["Mes"].astype(str).str.lower() == mes_seleccionado.lower()]
             
         if df_filtrado.empty:
             st.info("No hay categorías configuradas para mostrar.")

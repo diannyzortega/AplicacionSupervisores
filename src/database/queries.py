@@ -153,32 +153,49 @@ def actualizar_tabla_excel(df, sheet_name, rerun=True):
             records = df_db.to_dict(orient="records")
             st.write(f"🛠️ Procesados {len(records)} registros para la hoja {sheet_name}")
             
+            pk_field = model._meta.pk.name
             for rec in records:
-                # Búsqueda tolerante: intenta minúscula (Django) o Mayúscula (Vista)
-                supervisor_val = rec.get('supervisor') or rec.get('Supervisor')
-                
-                if model.__name__ == 'ResultadosTarde':
-                    date_field_name = 'fecha_cierre'
-                    date_val = rec.get('fecha_cierre') or rec.get('Fecha_Cierre') or rec.get('Fecha')
-                else:
-                    date_field_name = 'fecha'
-                    date_val = rec.get('fecha') or rec.get('Fecha')
-                
-                # Normalizamos las llaves críticas en el diccionario para Django
-                if supervisor_val and date_val:
-                    rec[date_field_name] = date_val
-                    rec['supervisor'] = supervisor_val
+                pk_val = rec.get(pk_field)
+                if pk_val is not None and str(pk_val).strip() != "":
+                    # Limpiamos el dict de defaults
+                    defaults_dict = rec.copy()
+                    defaults_dict.pop(pk_field, None)
+                    defaults_dict.pop('id', None) # Quitar id implícito si existe para evitar conflictos
                     
-                    # Quitamos duplicados visuales si existen para evitar conflictos con Django
-                    rec.pop('Supervisor', None)
-                    rec.pop('Fecha', None)
-                    rec.pop('Fecha_Cierre', None)
-                    
-                    lookup_kwargs = {date_field_name: date_val, 'supervisor': supervisor_val}
-                    model.objects.update_or_create(defaults=rec, **lookup_kwargs)
+                    # Convertir pk_val al tipo adecuado si es numérico
+                    if pk_field in ['id_categoria', 'id_region', 'id_sucursal']:
+                        try:
+                            pk_val = int(pk_val)
+                        except:
+                            pass
+                            
+                    model.objects.update_or_create(**{pk_field: pk_val}, defaults=defaults_dict)
                 else:
-                    # Fallback de seguridad si no se hallan campos clave estructurados
-                    model.objects.create(**rec)
+                    # Búsqueda tolerante: intenta minúscula (Django) o Mayúscula (Vista)
+                    supervisor_val = rec.get('supervisor') or rec.get('Supervisor')
+                    
+                    if model.__name__ == 'ResultadosTarde':
+                        date_field_name = 'fecha_cierre'
+                        date_val = rec.get('fecha_cierre') or rec.get('Fecha_Cierre') or rec.get('Fecha')
+                    else:
+                        date_field_name = 'fecha'
+                        date_val = rec.get('fecha') or rec.get('Fecha')
+                    
+                    # Normalizamos las llaves críticas en el diccionario para Django
+                    if supervisor_val and date_val:
+                        rec[date_field_name] = date_val
+                        rec['supervisor'] = supervisor_val
+                        
+                        # Quitamos duplicados visuales si existen para evitar conflictos con Django
+                        rec.pop('Supervisor', None)
+                        rec.pop('Fecha', None)
+                        rec.pop('Fecha_Cierre', None)
+                        
+                        lookup_kwargs = {date_field_name: date_val, 'supervisor': supervisor_val}
+                        model.objects.update_or_create(defaults=rec, **lookup_kwargs)
+                    else:
+                        # Fallback de seguridad si no se hallan campos clave estructurados
+                        model.objects.create(**rec)
 
             st.cache_data.clear()
             if rerun:

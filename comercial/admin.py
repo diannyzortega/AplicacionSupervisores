@@ -31,7 +31,7 @@ class AsesorAdmin(admin.ModelAdmin):
 
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
-    list_display = ('id_categoria', 'nombre_categoria', 'tipo_medida', 'obj_activacion', 'tipo_obj_activacion', 'obj_volumen', 'obj_profundidad')
+    list_display = ('id_categoria', 'nombre_categoria', 'mes', 'tipo_medida', 'obj_activacion', 'tipo_obj_activacion', 'obj_volumen', 'obj_profundidad')
     search_fields = ('nombre_categoria',)
 
 @admin.register(AsesorCategoria)

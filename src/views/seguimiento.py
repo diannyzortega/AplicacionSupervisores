@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 def show_seguimiento():
-    from comercial.models import Asesor, Categoria, AsesorCategoria, UserProfile, SeguimientoDiario
+    from comercial.models import Asesor, Categoria, AsesorCategoria, UserProfile, SeguimientoDiario, RegistroDiario
 
     st.title("📈 Seguimiento Asesores")
     st.markdown("<p style='color: #A0AAB2;'>Monitoreo en tiempo real de cuotas, coberturas y ejecución</p>", unsafe_allow_html=True)
@@ -15,6 +15,14 @@ def show_seguimiento():
     # Declarar variable globalmente para evitar UnboundLocalError
     bloquear_edicion = False
     supervisor_seleccionado = id_usuario_actual
+
+    import datetime
+    hoy = datetime.date.today()
+    meses_es = {
+        1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo", 6: "Junio",
+        7: "Julio", 8: "Agosto", 9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
+    }
+    anos = [hoy.year - 1, hoy.year, hoy.year + 1]
 
     # Mapeo de filtros en la pantalla principal
     if rol_actual in ["admin", "1", "coordinador", "2"]:
@@ -35,7 +43,7 @@ def show_seguimiento():
             
         lista_sups = [f"{s.id_usuario} - {s.nombre}" for s in sups]
         
-        col_sup, col_asesor = st.columns(2)
+        col_sup, col_asesor, col_mes, col_ano = st.columns(4)
         with col_sup:
             opciones_sups = ["Todos"] + [f"{s.id_usuario} - {s.nombre}" for s in sups]
             sup_box = st.selectbox("Filtrar por Supervisor:", opciones_sups)
@@ -51,7 +59,7 @@ def show_seguimiento():
             st.error("No se encontró sesión de usuario activa.")
             return
         supervisor_seleccionado = id_usuario_actual
-        col_asesor = st.container()
+        col_asesor, col_mes, col_ano = st.columns(3)
 
     # Obtener los asesores del supervisor seleccionado o de todos los permitidos
     if supervisor_seleccionado == "Todos":
@@ -71,6 +79,19 @@ def show_seguimiento():
     
     with col_asesor:
         asesor_sel = st.selectbox("Seleccione el Asesor Comercial:", lista_asesores)
+
+    with col_mes:
+        mes_sel_idx = list(meses_es.keys()).index(hoy.month)
+        mes_nombre = st.selectbox("Mes de Evaluación:", list(meses_es.values()), index=mes_sel_idx)
+        mes_num = [k for k, v in meses_es.items() if v == mes_nombre][0]
+
+    with col_ano:
+        ano_sel = st.selectbox("Año de Evaluación:", anos, index=1)
+
+    # Bloquear edición si el mes/año de evaluación seleccionado no es el actual
+    es_mes_actual = (ano_sel == hoy.year and mes_num == hoy.month)
+    if not es_mes_actual:
+        bloquear_edicion = True
     
     id_asesor_fn = asesor_sel.split(" - ")[0].strip()
     asesor_obj = Asesor.objects.get(id_asesor=id_asesor_fn)
@@ -87,14 +108,44 @@ def show_seguimiento():
 
     st.info(f"📋 **Ruta:** {id_asesor_fn} | **Asesor:** {asesor_obj.nombre_asesor} | **Universo Maestra:** {int(clientes_maestra)} clientes")
 
-    categorias = list(Categoria.objects.all())
+    from django.db.models import Q
+    mes_actual_nombre = meses_es[hoy.month]
+    if mes_nombre.strip().lower() == mes_actual_nombre.lower():
+        # Para el mes actual, mostrar categorías de este mes o sin mes definido (compatibilidad)
+        categorias = list(Categoria.objects.filter(
+            Q(mes__iexact=mes_nombre.strip()) | Q(mes__isnull=True) | Q(mes='')
+        ))
+    else:
+        # Para otros meses, mostrar estrictamente las categorías de ese mes
+        categorias = list(Categoria.objects.filter(mes__iexact=mes_nombre.strip()))
+        
     if not categorias:
-        st.warning("No hay categorías configuradas en la base de datos.")
+        st.warning(f"No hay categorías foco configuradas para el mes de {mes_nombre}.")
         return
 
+    # Clase auxiliar para emular la estructura de SeguimientoDiario y mantener compatibilidad
+    class MockSeguimiento:
+        def __init__(self, act=0.0, vol=0.0, prof=0.0):
+            self.act_lleva = act
+            self.vol_lleva = vol
+            self.prof_lleva = prof
+
     # Pre-cargar datos del asesor en memoria para evitar el problema de N+1 consultas (O(1) lookups)
-    seg_list = list(SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn))
-    seg_dict = {s.id_categoria: s for s in seg_list}
+    # Obtenemos los registros acumulados de la base de datos RegistroDiario para el mes y año seleccionados
+    reg_list = list(RegistroDiario.objects.filter(
+        id_asesor=id_asesor_fn,
+        fecha__year=ano_sel,
+        fecha__month=mes_num
+    ))
+    
+    # Agrupamos y sumamos por id_categoria
+    seg_dict = {}
+    for r in reg_list:
+        if r.id_categoria not in seg_dict:
+            seg_dict[r.id_categoria] = MockSeguimiento()
+        seg_dict[r.id_categoria].act_lleva += float(r.act_dia)
+        seg_dict[r.id_categoria].vol_lleva += float(r.vol_dia)
+        seg_dict[r.id_categoria].prof_lleva += float(r.prof_dia)
     
     rel_list = list(AsesorCategoria.objects.filter(id_asesor=id_asesor_fn))
     rel_dict = {r.id_categoria: r for r in rel_list}
@@ -260,14 +311,21 @@ def show_seguimiento():
         if st.button(f"💾 Guardar Reporte Diario de la Ruta {id_asesor_fn}", type="primary", use_container_width=True):
             with st.spinner("Guardando métricas de control diario en la Base de Datos..."):
                 try:
+                    from django.utils import timezone
+                    hoy_dt = timezone.localdate()
                     for cat in categorias:
                         cid = cat.id_categoria
                         
-                        # Obtener los valores acumulados actuales en la base de datos
-                        seg_db = SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn, id_categoria=cid).first()
-                        orig_act = float(seg_db.act_lleva) if seg_db else 0.0
-                        orig_vol = float(seg_db.vol_lleva) if seg_db else 0.0
-                        orig_prof = float(seg_db.prof_lleva) if seg_db else 0.0
+                        # Obtener los valores acumulados actuales en el mes en curso en la base de datos RegistroDiario
+                        registros_mes = RegistroDiario.objects.filter(
+                            id_asesor=id_asesor_fn,
+                            id_categoria=cid,
+                            fecha__year=hoy_dt.year,
+                            fecha__month=hoy_dt.month
+                        )
+                        orig_act = sum(float(r.act_dia) for r in registros_mes)
+                        orig_vol = sum(float(r.vol_dia) for r in registros_mes)
+                        orig_prof = sum(float(r.prof_dia) for r in registros_mes)
 
                         # Obtener los valores diarios ingresados por el usuario
                         row_act = editor_act[editor_act["ID_Categoria"] == cid]
@@ -284,6 +342,7 @@ def show_seguimiento():
                         val_vol = orig_vol + daily_vol
                         val_prof = orig_prof + daily_prof
                         
+                        # Actualizar/crear en SeguimientoDiario para que actúe como caché del mes actual
                         SeguimientoDiario.objects.update_or_create(
                             id_asesor=id_asesor_fn,
                             id_categoria=cid,
@@ -296,10 +355,8 @@ def show_seguimiento():
 
                         # Guardar registro diario en el historial si tiene movimientos
                         if daily_act > 0 or daily_vol > 0 or daily_prof > 0:
-                            from comercial.models import RegistroDiario
-                            from django.utils import timezone
                             RegistroDiario.objects.create(
-                                fecha=timezone.localdate(),
+                                fecha=hoy_dt,
                                 id_asesor=id_asesor_fn,
                                 id_categoria=cid,
                                 act_dia=daily_act,
@@ -314,4 +371,7 @@ def show_seguimiento():
                 except Exception as e:
                     st.error(f"Error crítico al guardar seguimiento: {e}")
     else:
-        st.info("ℹ️ Estás visualizando este reporte en modo de consulta (Lectura). Los cambios en la cuadrícula no se guardarán.")
+        if not es_mes_actual:
+            st.info("ℹ️ Estás visualizando un mes diferente al actual. La carga de datos diarios está deshabilitada.")
+        else:
+            st.info("ℹ️ Estás visualizando este reporte en modo de consulta (Lectura). Los cambios en la cuadrícula no se guardarán.")
