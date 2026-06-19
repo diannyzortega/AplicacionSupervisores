@@ -92,6 +92,13 @@ def show_seguimiento():
         st.warning("No hay categorías configuradas en la base de datos.")
         return
 
+    # Pre-cargar datos del asesor en memoria para evitar el problema de N+1 consultas (O(1) lookups)
+    seg_list = list(SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn))
+    seg_dict = {s.id_categoria: s for s in seg_list}
+    
+    rel_list = list(AsesorCategoria.objects.filter(id_asesor=id_asesor_fn))
+    rel_dict = {r.id_categoria: r for r in rel_list}
+
     tab_activacion, tab_volumen, tab_profundidad = st.tabs([
         "🎯 Activación", "📦 Volumen", "🧬 Profundidad de Línea"
     ])
@@ -100,7 +107,7 @@ def show_seguimiento():
         st.markdown("##### Evaluación de Activación de Clientes")
         data_act = []
         for cat in categorias:
-            seg = SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn, id_categoria=cat.id_categoria).first()
+            seg = seg_dict.get(cat.id_categoria)
             lleva = float(seg.act_lleva) if seg else 0.0
 
             nombre_cat = cat.nombre_categoria.lower()
@@ -159,10 +166,10 @@ def show_seguimiento():
         st.markdown("##### Evaluación de Volumen de Ventas")
         data_vol = []
         for cat in categorias:
-            rel = AsesorCategoria.objects.filter(id_asesor=id_asesor_fn, id_categoria=cat.id_categoria).first()
+            rel = rel_dict.get(cat.id_categoria)
             meta_config = float(rel.obj_volumen) if rel else 0.0
             
-            seg = SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn, id_categoria=cat.id_categoria).first()
+            seg = seg_dict.get(cat.id_categoria)
             lleva = float(seg.vol_lleva) if seg else 0.0
             
             if meta_config > 0.0:
@@ -210,13 +217,12 @@ def show_seguimiento():
 
     with tab_profundidad:
         st.markdown("##### Evaluación de Profundidad de Línea")
-        # Obtener la maestra y maestra de rebanadora del asesor una sola vez
-        asesor_obj = Asesor.objects.filter(id_asesor=id_asesor_fn).first()
+        # Reusar el asesor_obj ya cargado anteriormente
         maestra_val = getattr(asesor_obj, "maestra", "") if asesor_obj else ""
         maestra_rebanadora_val = getattr(asesor_obj, "maestra_rebanadoras", "") if asesor_obj else ""
         data_prof = []
         for cat in categorias:
-            seg = SeguimientoDiario.objects.filter(id_asesor=id_asesor_fn, id_categoria=cat.id_categoria).first()
+            seg = seg_dict.get(cat.id_categoria)
             lleva_prof = float(seg.prof_lleva) if seg else 0.0
             meta_prof = float(cat.obj_profundidad) if cat.obj_profundidad else 0.0
             # Meta SKU should display the depth objective (obj_profundidad)
