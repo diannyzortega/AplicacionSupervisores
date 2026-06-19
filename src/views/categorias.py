@@ -215,15 +215,22 @@ def show_categorias():
                         # Validar si ya existe la categoría para esta misma región
                         existe = False
                         if not tb_categorias.empty:
-                            duplicados = tb_categorias[
-                                (tb_categorias["Nombre_Categoria"].str.lower() == nom_categoria.lower()) & 
-                                (tb_categorias["ID_Region"] == id_region_sel)
-                            ]
+                            if "Mes" in tb_categorias.columns:
+                                duplicados = tb_categorias[
+                                    (tb_categorias["Nombre_Categoria"].str.lower() == nom_categoria.lower()) & 
+                                    (tb_categorias["ID_Region"] == id_region_sel) &
+                                    (tb_categorias["Mes"].astype(str).str.lower() == mes_categoria.lower())
+                                ]
+                            else:
+                                duplicados = tb_categorias[
+                                    (tb_categorias["Nombre_Categoria"].str.lower() == nom_categoria.lower()) & 
+                                    (tb_categorias["ID_Region"] == id_region_sel)
+                                ]
                             if not duplicados.empty:
                                 existe = True
                         
                         if existe:
-                            st.error(f"❌ Esta categoría ya se encuentra registrada para la región seleccionada.")
+                            st.error(f"❌ Esta categoría ya se encuentra registrada para la región y mes seleccionados.")
                         else:
                             valor_act_limpio = obj_act.replace("%", "").strip()
                             
